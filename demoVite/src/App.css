@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 25px;
+  font-size: 3rem;
+  border: solid 2px #333;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #eee;
+  box-shadow: 0 0 10px #333;
+  border-radius: 5px;
+  color: #333;
+  width: 200px;
+}
+
+h2,
+p {
+  margin: 0;
+
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

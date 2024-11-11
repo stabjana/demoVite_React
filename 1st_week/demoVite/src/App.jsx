@@ -12,7 +12,8 @@ function App() {
   };
 
   const handleClick = (id) => {
-    console.log("I am clicked", id); // new!!!
+    console.log("I am clicked", id); // new!!! --- Falls Card etwas an App melden müsste (z. B. durch den Klick auf einen Button), würde App eine Funktion als Prop an Card weitergeben, die Card dann aufrufen kann. So wie hier.
+
   }
 
   return (

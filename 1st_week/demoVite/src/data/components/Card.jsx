@@ -13,3 +13,4 @@ function Card({ firstName, title, age, animal, click }) { // don't forget the pr
 }
 
 export default Card;
+// hier wird die Funktion an den button übergeben und in diesem Component aufgerufen und ausgeführt.

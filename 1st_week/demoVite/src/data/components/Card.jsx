@@ -7,7 +7,7 @@ function Card({ firstName, title, age, animal, click }) { // don't forget the pr
     <p>Title: {title}</p>
     <p>Age: {age}</p>
     <p>Animal: {animal}</p>
-    <Button text="Click me" click={click} />
+    <Button text="Edit" click={click} />
   </div>
   )
 }

@@ -23,6 +23,11 @@ a:hover {
   color: #53f2a0;
 }
 
+a.active {
+  color: #747bff;
+  text-transform: uppercase;
+}
+
 body {
   margin: 0;
   font-size: 1em;

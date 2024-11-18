@@ -4,8 +4,13 @@ import List from "../pages/List";
 import About from "../pages/About";
 import ErrorPage from "../pages/ErrorPage";
 
-export const router = createBrowserRouter([ //named export
-    { path: "/", element: <Root />, errorElement: <ErrorPage /> },
-    { path: "/list", element: <List /> },
-    { path: "/about", element: <About /> },
+export const router = createBrowserRouter([
+    {
+        path: "/", element: <Root />, errorElement: <ErrorPage />,
+
+        children: [
+            { path: "/list", element: <List /> },
+            { path: "/about", element: <About /> },
+        ],
+    },
 ]);

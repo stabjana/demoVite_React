@@ -1,16 +1,11 @@
 import './App.css'
-import List from './pages/List';
-import Root from './pages/Root';
-import About from './pages/About';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/appRoutes'; // is named export
 
 function App() {
 
   return (
-    <>
-      <Root />
-      <List />
-      <About />
-    </>
+    <RouterProvider router={router} />
   );
 
 }

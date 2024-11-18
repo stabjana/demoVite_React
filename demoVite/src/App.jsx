@@ -8,7 +8,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true); // to false again! 
 
   const toggleLogIn = () => {
-    setIsLoggedIn((prevState) => !prevState);
+    setIsLoggedIn((prevState) => !prevState); // when react state is updated prev keyword = setting it to the opposite of prevState
   };
 
   const handleClick = (id) => {

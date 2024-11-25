@@ -11,9 +11,8 @@ const List = () => {
 
     return (
         <>
-            {/*  <Header/> */}
+            <Header />
             <main>
-                {/*  {isLoggedIn ? (*/}
                 <div>
 
                     {
@@ -28,12 +27,7 @@ const List = () => {
                         ))
                     }
                 </div>
-                {/*    ) : (
-                    <div className='logInSect'>
-                        <p>Please log in to see the list</p>
-                    </div>
-                )
-                } */}
+
             </main>
         </>
     );

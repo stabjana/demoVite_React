@@ -1,37 +1,36 @@
-import personsData from '../data/personsData';
-import Card from '../components/Card';
-import Header from '../components/Header';
+import { useNavigate } from "react-router-dom";
+import personsData from "../data/personsData";
+import Card from "../components/Card";
 
 const List = () => {
+    const navigate = useNavigate();
 
-
-    const handleClick = (id) => {
-        console.log("I am clicked", id);
-    }
+    const handleNavigate = (id) => {
+        navigate(`/${id}`);
+        console.log(id);
+    };
 
     return (
-        <>
-            <Header />
+        <div>
             <main>
-                <div>
-
-                    {
-                        personsData.map((person) => (
+                <>
+                    <h2>Employees</h2>
+                    <div className="list">
+                        {personsData.map((person) => (
                             <Card
                                 key={person.id}
                                 firstName={person.firstName}
                                 title={person.title}
                                 age={person.age}
                                 animal={person.animal}
-                                click={() => handleClick(person.id)} /> // sending info to the method and return it back to the function
-                        ))
-                    }
-                </div>
-
+                                onClick={() => handleNavigate(person.id)}
+                            />
+                        ))}
+                    </div>
+                </>
             </main>
-        </>
+        </div>
     );
-
 };
 
 export default List;

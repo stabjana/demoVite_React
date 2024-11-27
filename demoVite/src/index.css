@@ -76,14 +76,15 @@ button:focus-visible {
   transition: border-color 0.25s;
 } */
 
-.btn.primary {
+.btn.secondary {
   background-color: transparent;
-  color: #95af14;
+  color: #789000;
 }
 
-.btn.secondary {
-  background-color: #f4ffba;
+.btn.primary {
+  background-color: #a1b736;
   color: #333;
+  margin-top: 3px;
 }
 
 div,

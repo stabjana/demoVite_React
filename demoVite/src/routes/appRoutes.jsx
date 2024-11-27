@@ -18,7 +18,7 @@ export const router = createBrowserRouter(
             ],
         },
     ],
-    { /* what is that??? */
+    { /* Der Block { future: { ... } } aktiviert experimentelle oder zukünftige Features in React Router. Diese Features verbessern die Flexibilität, Leistung und Handhabung von Routen in deiner Anwendung. */
         future: {
             v7_relativeSplatPath: true,
             v7_fetcherPersist: true,
